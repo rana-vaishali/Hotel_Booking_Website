@@ -5,7 +5,18 @@
     </head>
     <body>
         <div>
-            <span>LOGIN</span>
+         <!--<span>LOGIN</span>-->   
+         <span>
+            <form action="index.html" method="get" target="_self" >
+                <label for="name">Username:</label>
+                <input type="text" id="name" placeholder="Enter Username" name="username" autocomplete="off" required/>
+                <br />
+                <label for="userPassword">Password:</label>
+                <input type="password" id="userPassword" placeholder="Enter Password"name="password" required />
+                <br />
+                <input type="submit" value="Login"/>
+         </form>
+        </span>
         </div>
     </body>
 </html>
