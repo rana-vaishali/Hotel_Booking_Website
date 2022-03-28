@@ -2,25 +2,27 @@
 <html>
     <head>
         <title>List</title>
+        <link rel="stylesheet" href="styles/list.css" type="text/css" />
     </head>
     <body>
-        <div>
+        <div id="mainContainer">
             
             <!--Header Div-->
-            <div>
-                <a href="index.html" target="_self"><img src="assests/images/logo.png" alt="logo" height="100px" width="150px" /></a>
+            <header>
+                <a href="index.html" target="_self"><img id="logoImg" src="assests/images/logo.png" alt="logo" /></a>
                 <a href="login.html" target="_self"><span>Login</span></a>
-            </div>
+            </header>
              <!--Header Div ends-->
             <!--Content Div-->
             <div>
                 <!--part 1-->
                 <ul>
-                    <li><a href="list.html" target="_self">List View</a></li>
-                    <li><a href="list.html" target="_self">Map View</a></li>
+                    <li><a href="#list-view">List View</a></li>
+                    <li><a href="#map-view">Map View</a></li>
                 </ul>
                 <!--part 2-->
-               <ul style="list-style-type:none;">
+                <div id="list-view">
+               <ul class="hotel-img" style="list-style-type:none; margin-top: 0px; padding-left: 0px;">
                 <a href="detail.html" target="_self">
                     <li>
                         <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel" />
@@ -49,24 +51,27 @@
                           </dl>
                     </li>
                </ul>
+            </div>
                <!--part 3-->
+               <div id="map-view">
                 <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="map" /><br />
                 <p>MAP VIEW</p>
+            </div>
             </div>
 
             <!--Content Div ends-->
             <!--Footer Div-->
-            <div>
+            <footer class="socialImg">
                 <!--part 1-->
                 <a href="contact.html" target="_self"><span>Contact Us</span></a><br />
                 <!--part 2-->
-                <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" width="22px" height="20px" alt="facebook" /></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" width="22px" height="20px" alt="instagram"/></a>
-                <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" width="22px" height="20px" alt="twitter" /></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" /></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram"/></a>
+                <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" /></a>
                 <br />
                 <!--part 3-->
                  <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
-           </div>
+           </footer>
             <!--Footer Div ends-->
         </div>
     </body>
