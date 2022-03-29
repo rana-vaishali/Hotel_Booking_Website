@@ -8,16 +8,16 @@
         <div id="mainContainer">
             
             <!--Header Div-->            
-            <header>
+            <header class="header">
               <a href="index.html" target="_self"><img  id="logoImg" src="assests/images/logo.png" alt="logo" /></a>
                 <a href="login.html" target="_self"><span>Login</span></a>
             </header>
              <!--Header Div ends-->
 
             <!--Content Div-->
-            <div class="hotel-img">
-               <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel" /><br />
-               <span>
+            <div>
+              <div class="hotel-img"><img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel" /></div> 
+               <div class="form-div">
                  <form method="get" target="_self" action="payment.html">
                   <label for="number">Adults: </label>
                   <input type="number" min="1" value="1" id="number" name="number" /><br />
@@ -31,8 +31,8 @@
                   <input type="text" id="total" name="total" readonly/><br />
                   <input type="submit" value="Book Now"/>
                </form>
-              </span>
-               <br />
+              </div>
+              <div class="desc-div">
                <h2>Radisson Blu Hotel</h2>
                <dl>
                 <dt>RATING</dt>
@@ -56,6 +56,7 @@
               </dl>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et perferendis ipsum inventore qui nulla excepturi odio rem, voluptates consequatur quisquam nemo dolores doloremque quod corrupti option.<br/> Recusandae totam doloremque at.</p>
             </div>
+          </div>
 
             <!--Footer Div-->
             <footer class="socialImg">
