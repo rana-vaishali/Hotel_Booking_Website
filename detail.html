@@ -3,19 +3,22 @@
     <head>
         <title>Detail</title>
         <link rel="stylesheet" href="styles/detail.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="mainContainer">
+        <div id="container">
             
-            <!--Header Div-->            
-            <header class="header">
-              <a href="index.html" target="_self"><img  id="logoImg" src="assests/images/logo.png" alt="logo" /></a>
-                <a href="login.html" target="_self"><span>Login</span></a>
-            </header>
+            <!--Header Div-->  
+            <header>
+              <div>
+              <a href="index.html" target="_self"><img id="logoImg" src="assests/images/logo.png" alt="logo" /></a>
+              <a href="login.html" target="_self" class="login">Login</a>
+          </div>
+      </header>             
              <!--Header Div ends-->
 
             <!--Content Div-->
-            <div>
+            <div class="content">
               <div class="hotel-img"><img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel" /></div> 
                <div class="form-div">
                  <form method="get" target="_self" action="payment.html">
@@ -58,20 +61,23 @@
             </div>
           </div>
 
-            <!--Footer Div-->
-            <footer class="socialImg">
-                <!--part 1-->
-                <a href="contact.html" target="_self"><span>Contact Us</span></a><br />
-                <!--part 2-->
-                <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" /></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram"/></a>
-                <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" /></a>
-                <br />
-                <!--part 3-->
-                 <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
-            </footer>
-            <!--Footer Div ends-->
-
+                <!--Footer Div-->
+        <footer >
+            
+          <!--part 1-->
+         <div class="foo-contact"> <a href="contact.html" target="_self">Contact Us</a></div>
+          <!--part 2-->
+          <div class="copywrite">&copy; 2020 ROOM SEARCH PVT. LTD.</div>          
+          <br />
+          <!--part 3-->
+          <div id="social-group">
+              <a href="https://www.facebook.com" target="_blank"><img class="socialImg " src="assests/images/facebook.png"  alt="facebook" /></a>
+              <a href="https://www.instagram.com" target="_blank"><img class="socialImg" src="assests/images/instagram.png" alt="instagram"/></a>
+              <a href="https://twitter.com" target="_blank"><img class="socialImg " src="assests/images/twitter.png" alt="twitter" /></a>
+          </div>
+      
+     </footer>
+      <!--Footer Div ends-->
         </div>
     </body>
 </html>
