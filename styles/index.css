@@ -61,16 +61,21 @@
      padding: 3.5em 0;
     justify-content: space-evenly;
 align-items: center;
-   
+width: -webkit-fill-available;
 }
+
 
 .cityImg-container a{
     text-decoration: none;
 }
 
 .content{
-    display: flexbox;
+    display: flex;
+    align-items: center;
     flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    min-width: -webkit-fill-available;
 }
 
 
@@ -89,4 +94,8 @@ align-items: center;
       height: 150px;
       width: 150px;
       border-radius: 25%;
+  }
+
+  .btn btn-primary{
+      align-self: center;
   }

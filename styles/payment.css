@@ -32,6 +32,14 @@ display: flex;
   display: flex;
   flex-direction: column;
 }
+.content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  min-width: -webkit-fill-available;
+}
 
 .hotel-desc{
     margin-left: 5%;

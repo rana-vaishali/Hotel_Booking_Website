@@ -44,8 +44,11 @@
   min-width: 40%;
   display: flex;
 } 
+.hotel-img li:hover{
+  background-color: rosybrown;
+}
 
-.list-content-menu {
+#list-content-menu {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -54,18 +57,19 @@
   align-items: center;
 }
 
-.list-content-menu-item {
+#list-content-menu-item {
   margin: 20px;
 
 }
 
-.list-content-menu-item a {
+#list-content-menu-item a {
   text-decoration: none;
   color: black;
   font-weight: bold;
   padding: 0.2rem 1rem;
 }
 
-#map-view{
-  display: none;
+
+.nav{
+  justify-content: center;
 }
