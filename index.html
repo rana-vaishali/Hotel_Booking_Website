@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <link rel="stylesheet" type="text/css" href="./styles/common.css" />
     <link rel="stylesheet" type="text/css" href="./styles/index.css" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
@@ -24,22 +25,31 @@
         <div class="content">
 
             <!--Search Bar for Hotels-->
-            <form id="searchBar">
-                <label></label>
-                <input type="text" placeholder="City" autocomplete="off" id="name">
-            </form>
+            <div id="searchBar">
+              <div class="search">
+                <input type="text" placeholder="City">
+              </div>
+            </div>
 
          <!--part 2-->
-         <div class="content-img">
-            <div class="cityImg-container">
-            <div class="cityImg" ><a href="list.html" target="_self"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="delhi" /></a></div>
-            <div class="cityImg"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="goa" /></div>
-            <div class="cityImg">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="charminar"  /></div> 
-            <div class="cityImg"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="calcutta" /></div> 
         </div>
-    </div><br>
-
+        <div class="content-img">
+          <div class="cityImg-container">
+            <a href="list.html" target="_self">
+          <div class="cityImg" style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg');"> <div class="overlay">
+            <p style="text-decoration: none; color:  #f1f1f1;">Delhi</p>
+          </div></div></a>
+          <div class="cityImg" style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg');"> <div class="overlay">
+            <p style="color:  #f1f1f1;">Goa</p>
+          </div></div>
+          <div class="cityImg" style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg');"> <div class="overlay">
+            <p style="color:  #f1f1f1;">Hyderabad</p>
+          </div></div> 
+          <div class="cityImg" style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg');"> <div class="overlay">
+            <p style="color:  #f1f1f1;">Kolkata</p>
+          </div></div> 
+      </div>
+  </div><br>
 
             <!--This option gives us view more option for hotels-->
             <div class="view-more"><a href="./index.html"  class="view">View more>></a></div>

@@ -1,131 +1,54 @@
-html,
-body {
 
-    min-height: auto;
-    min-width: auto;
-    background-color: #e0e0e0;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-
-}
-
-
-header {
-    background-color: rosybrown;
-    position: sticky;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    display: flexbox;
-
-}
-
-
-
-
-.logo {
-    height: 60px;
-    width: 60px;
-    vertical-align: middle;
-    margin-left: 1%;
-}
-
-  .container{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-*{
-
-    font-family: 'Ubuntu', sans-serif;
-}
-
-#logoImg{
-    height: 60px;
-    width: 60px;
-}
 
 
 .hotel-img img{
-    height: 500px;
-    width: 500px;
+    max-height: 300px;
+    max-width: 270px;
 }
 
-.login {
 
-    float: right;
-    color: black;
-    text-decoration: none;
-    margin-right: 2%;
-    margin-top: 1.5%;
-  
-  }
-  
-  footer {
-    background-color: rosybrown;
-    position: sticky;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    
-  }
-  
-  
-  .socialImg{
-    height: 20px;
-    width: 22px;
-  }
-  
-  #social-group{
-    display: flex;
-    align-self: center;
-    
-    text-align: right;
-    
-  }
-  
-  .foo-contact a{
-    color: black;
-    text-decoration: none;
-    float: left;
-    margin-left: 2%;
-    margin-top: 13px;
-    align-self: center;
-    margin-bottom: 20%;
-    width: 100%;
-  
-  }
-  
-  
-  .copywrite {
-  
-    color: black;
-    font-size: 10px;
-    text-align: center;
-    margin-inline: auto;
-    
-    align-self: end;
-    text-align: center;
-    
-  }
   
 .hotel-div{
 background-color: rgb(132, 136, 139);
 width: 50%;
 height: 20%;
 margin: 0 auto;
-margin-top: 2%;
+margin-top: 10%;
 margin-bottom: 2%;
+display: flex;
 }
-.customer-desc{
-    margin: 2%;
+
+.customer b{
+  font-family: cursive;
 }
 .tarrif{
-    margin: 2%;
-    border: 1px solid black;
+    align-self: center;
+}
+.pay-now{
+  align-self: center;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-desc{
+    margin-left: 5%;
+    justify-content: center;
+    margin-top: 0%;
+    align-self: center;
+ 
+}
+.customer{
+  display: flex;
+  border: 1px solid black;
+  max-block-size: fit-content;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    background-color: rosybrown;
     border-radius: 5px;
-    padding: 1% 2%;
 }
