@@ -2,12 +2,12 @@
 
 
 .hotel-img img{
-    max-height: 300px;
-    max-width: 270px;
+  max-height: 300px;
+  max-width: 270px;
 }
 
 
-  
+
 .hotel-div{
 background-color: rgb(132, 136, 139);
 width: 50%;
@@ -19,36 +19,45 @@ display: flex;
 }
 
 .customer b{
-  font-family: cursive;
+font-family: cursive;
 }
 .tarrif{
-    align-self: center;
+  align-self: center;
 }
 .pay-now{
-  align-self: center;
+align-self: center;
 }
 
 .content{
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
+}
+.content{
+display: flex;
+align-items: center;
+flex-direction: column;
+padding: 0px;
+margin: 0px;
+min-width: -webkit-fill-available;
 }
 
 .hotel-desc{
-    margin-left: 5%;
-    justify-content: center;
-    margin-top: 0%;
-    align-self: center;
- 
+  margin-left: 5%;
+  justify-content: center;
+  margin-top: 0%;
+  align-self: center;
+
 }
 .customer{
-  display: flex;
-  border: 1px solid black;
-  max-block-size: fit-content;
-    margin-top: 25px;
-    margin-right: 25px;
-    margin-left: 25px;
-    margin-bottom: 50px;
-    justify-content: space-around;
-    background-color: rosybrown;
-    border-radius: 5px;
+display: flex;
+border: 1px solid black;
+  margin-top: 25px;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-bottom: 50px;
+  justify-content: space-around;
+  background-color: rosybrown;
+  border-radius: 5px;
+  width: -webkit-fill-available;
 }
+
