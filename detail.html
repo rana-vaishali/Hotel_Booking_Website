@@ -28,7 +28,30 @@
             <!--Content Div-->
             <div class="content">
               <div class="flex-form">
-              <div class="hotel-img"><img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel" /></div> 
+              <div class="hotel-img">
+                <div class="arrow">
+                  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a></div>
+                
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+               
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="..." alt="Second slide"/>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="..." alt="Third slide"/>
+                    </div>
+                  </div>      
+                </div>
+                <div class="arrow"> <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" ></span>
+                </a></div>     
+               </div> 
                <div class="form-div">
                  <form method="get" target="_self" action="payment.html">
                   <div class="inner-formd-div"><label for="number">Adults: </label>
@@ -40,8 +63,8 @@
                   <div class="inner-formd-div"><label for="toDate">To Date: </label>
                   <input type="date" id="toDate" name="toDate" required /></div><br />
                   <div class="inner-formd-div"><label for="total">Total: </label>
-                  <input type="text" id="total" name="total" readonly/></div><br />
-                  <div class="submit-button"><input type="submit" value="Book Now"/></form></div>
+                  <input type="text" id="total" name="total" readonly/></div>
+                  <div id="btn"><button type="button" class="btn btn-outline-success" >Book Now</button></form></div>
                </form>
               </div>
             </div>
@@ -51,7 +74,11 @@
                 <dt><h5>RATING</h5></dt>
               </dl>
               <dl>
-                <dt>5 Star</dt>
+                <dt><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span></dt>
               </dl>
               <dl>
                 <dt><h5>AMENITIES</h5>

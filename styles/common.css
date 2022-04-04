@@ -103,3 +103,14 @@ footer {
     margin-inline: auto;
     
 }
+#body-modal{
+    text-align: center;
+}
+
+.form-body{
+    display: grid;
+    grid: auto / auto auto;
+    grid-row-gap: 20%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
