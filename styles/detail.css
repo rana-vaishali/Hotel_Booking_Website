@@ -1,34 +1,4 @@
 
-<<<<<<< HEAD
-
-.hotel-img img{
- max-height: 350px;
-    width: 500px;
-align-self: center;
-}
-h5{
-  font-family: cursive;
-}
-
-/*header css*/
-
-.hotel-img{
-  display: flex;
-  flex-grow: 2;
-  border-right: none;
-  justify-content: center;
-/*  margin-left: 25px;
-  margin-top: 30px;*/
-}
-.form-div{
- 
-    display: flex;
-    flex-direction: column;
-    width: 33%;
-    padding-left: 30px;
-    padding-right: 30px;
-    line-height: normal;
-=======
 .carousel-inner img{
   height: 350px;
      width: 500px;
@@ -57,7 +27,6 @@ h5{
    border-right: none;
    align-content: center;
    justify-content: space-evenly;
->>>>>>> testing
    
  /*  margin-left: 25px;
    margin-top: 30px;*/
@@ -116,50 +85,6 @@ h5{
    margin-bottom: 5px;
  }
 
-<<<<<<< HEAD
-.flex-form{
-  display: flex;
-    max-height: 400px;
-    margin-top: 25px;
-    margin-right: 25px;
-    margin-left: 25px;
-    width: -webkit-fill-available;
- /* margin-right: 1.5%;
-  margin-top: 20px;
-  margin-left: 25px;
-  margin-right: 25px;*/
-}
-
-.inner-formd-div input{
-  width: 60%;
-
-}
-.inner-formd-div{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-  padding-top: 10px;
-}
-
-.submit-button{
-  display: flex;
-  justify-content: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.submit-button button{
-  padding: 2%;
-}
-
-.container{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 0px;
-  margin: 0px;
-  min-width: -webkit-fill-available;
-}
-=======
  
  .container{
    display: flex;
@@ -173,4 +98,3 @@ h5{
  .checked {
   color: orange;
 }
->>>>>>> testing

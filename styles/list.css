@@ -45,36 +45,6 @@ min-width: 40%;
 display: flex;
 } 
 .hotel-img li:hover{
-<<<<<<< HEAD
-  background-color: rosybrown;
-}
-
-#list-content-menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#list-content-menu-item {
-  margin: 20px;
-
-}
-
-#list-content-menu-item a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  padding: 0.2rem 1rem;
-}
-
-
-.nav{
-  justify-content: center;
-}
-=======
 background-color: rosybrown;
 }
 
@@ -107,4 +77,3 @@ padding: 0.2rem 1rem;
   .checked {
     color: orange;
   }
->>>>>>> testing
