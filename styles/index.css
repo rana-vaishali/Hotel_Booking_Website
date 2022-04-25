@@ -43,9 +43,33 @@
 
 /*--------------header div ends----------------*/
 
+.row {
+   
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4% 0;
+    margin-bottom: 4%;    
+    width: -webkit-fill-available;
+    text-align: -webkit-center;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    position: relative;
+  
+  }
+  
+  .column img {
+    height: 150px;
+    width: 150px;
+    border-radius: 25%;
+    background-size: cover;
+    box-shadow: 10px 10px 10px gray;
+   
+  }
+  
 
-
-.cityImg {
+#cityImg {
     height: 150px;
     width: 150px;
     border-radius: 25%;
@@ -54,8 +78,10 @@
     box-shadow:  10px 10px 10px grey;
 }
 
+
 .cityImg-container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: center;
     align-content: center;
      padding: 3.5em 0;
@@ -78,7 +104,7 @@ width: -webkit-fill-available;
     min-width: -webkit-fill-available;
 }
 
-
+/*
 
   .overlay{
     display: flex;
@@ -94,8 +120,53 @@ width: -webkit-fill-available;
       height: 150px;
       width: 150px;
       border-radius: 25%;
+  }*/
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 25%;
+    opacity: 0;
+  }
+  .column:hover .overlay {
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .text {
+    color: #f1f1f1;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 
   .btn btn-primary{
       align-self: center;
+  }
+
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+      margin-bottom: 4%;
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+      margin-bottom: 4%;
+    }
   }
