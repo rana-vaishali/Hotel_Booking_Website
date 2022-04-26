@@ -24,13 +24,13 @@
     }
  
 
-.view {
+/*.view {
     color: black;
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
     
 
-}
+}*/
 .view-more{
     text-align: center;
     margin-bottom: 20px;
@@ -39,7 +39,9 @@
 
 
 /*--------------header div starts----------------*/
-
+#logout-button{
+display: none;
+}
 
 /*--------------header div ends----------------*/
 

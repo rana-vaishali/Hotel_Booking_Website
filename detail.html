@@ -13,15 +13,8 @@
         <div id="container">
             
               <!--Header Div-->
-              <header>
-                <div>
-                    <!--Image logo-->
-                    <a href="index.html" target="_self"><img src="./assests/images/logo.png" class="logo" alt="logo"></a></div>
-                    <div class="login-div">  <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#loginModal" id="login-button">
-                      LOGIN
-                  </button> 
-                </div>
-            </header>
+              <header  id="header-template">           
+              </header>
     
              <!--Header Div ends-->
 
@@ -55,16 +48,16 @@
                <div class="form-div">
                  <form method="get" target="_self" action="payment.html">
                   <div class="inner-formd-div"><label for="number">Adults: </label>
-                  <input type="number" min="1" value="1" id="number" name="number" /></div><br />
+                  <input type="number" min="1" value="1" id="number" oninput="changeValue()" name="number" /></div><br />
                   <div class="inner-formd-div"><label for="name">Name: </label>
-                  <input type="text" id="name" name="name" required/></div><br />
+                  <input type="text" id="name-form" name="name" required/></div><br />
                   <div class="inner-formd-div"><label for="fromDate">From Date: </label>
-                  <input type="date" id="fromDate" name="fromDate" required/></div><br />
+                  <input type="date" id="fromDate" oninput="changeValue()" value="null" name="fromDate" required/></div><br />
                   <div class="inner-formd-div"><label for="toDate">To Date: </label>
-                  <input type="date" id="toDate" name="toDate" required /></div><br />
+                  <input type="date" id="toDate" oninput="changeValue()" value="null" name="toDate" required /></div><br />
                   <div class="inner-formd-div"><label for="total">Total: </label>
                   <input type="text" id="total" name="total" readonly/></div>
-                  <div id="btn"><a href="payment.html" class="btn btn-outline-success" role="button" aria-pressed="true">Book Now</a></form></div>
+                  <div id="btn"> <button style="padding: 5px;" aria-pressed="true" class="btn btn-outline-success" id="book-btn">Book Now</button></form></div>
                </form>
               </div>
             </div>
@@ -97,21 +90,8 @@
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et perferendis ipsum inventore qui nulla excepturi odio rem, voluptates consequatur quisquam nemo dolores doloremque quod corrupti option.<br/> Recusandae totam doloremque at.</p>
             </div>
              <!--Footer Div-->
-             <footer >
-            
-              <!--part 1-->
-             <div class="foo-contact"><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#contactModal" id="contact-button">Contact Us</button></div>
-              <!--part 2-->
-              <div class="copywrite">&copy; 2020 ROOM SEARCH PVT. LTD.</div>          
-              <br />
-              <!--part 3-->
-              <div id="social-group">
-                  <a href="https://www.facebook.com" target="_blank"><img class="socialImg " src="assests/images/facebook.png"  alt="facebook" /></a>
-                  <a href="https://www.instagram.com" target="_blank"><img class="socialImg" src="assests/images/instagram.png" alt="instagram"/></a>
-                  <a href="https://twitter.com" target="_blank"><img class="socialImg " src="assests/images/twitter.png" alt="twitter" /></a>
-              </div>
-          
-         </footer>
+             <footer id="footer-template">     
+            </footer>
 
              
               <!--Footer Div ends-->
@@ -175,5 +155,7 @@
                 </div>
               </div>
             </div>   
+            <script src="./scripts/common.js"></script>
+            <script src="./scripts/detail.js"></script>
     </body>
 </html>
