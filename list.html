@@ -36,8 +36,9 @@
                 <!--part 2-->
                 <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-               <ul class="hotel-img" style="list-style-type:none; margin-top: 0px; padding-left: 0px;">
-               
+                 <!-- <div id="list"></div>-->
+             <ul class="hotel-img" id="list" style="list-style-type:none; margin-top: 0px; padding-left: 0px;">
+               <!--
                     <li class="li-content">
                         <a href="detail.html" target="_self">
                         <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel" />
@@ -76,12 +77,13 @@
                               <span class="fa fa-star"></span></dt>
                             <dt><p>New Delhi</p></dt>
                           </dl>
-                    </li>
+                    </li>-->
                </ul>
             </div>
                <!--part 3-->
                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="map" /><br />               
+                <div id="map"></div>
+               <!-- <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="map" /><br />      -->         
             </div>
           </div>
             </div>
@@ -96,64 +98,9 @@
         <!--Footer Div ends-->
             </div>
 
-              <!-- login Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="loginModalLabel">Please Login</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-  
-            <div class="modal-body">
-              <!--<span>LOGIN</span>-->   
-              <span>
-                 <form action="index.html" method="get" target="_self" >
-                     <label for="name">Username:</label>
-                     <input type="text" id="name" placeholder="Enter Username" name="username" autocomplete="off" required/>
-                     <br />
-                     <label for="userPassword">Password:</label>
-                     <input type="password" id="userPassword" placeholder="Enter Password"name="password" required />
-                     <br />
-                     <div class="modal-footer"></div>
-                     <button type="login" style="float: center;" class="btn btn-primary">Login</button>
-              </form>
-             </span>
-             </div>
-                  
-          </div>
-        </div>
-      </div>   
-  
-       <!--contact us Modal -->
-       <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="ContactModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="ContactModalLabel">Get in touch</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-  
-            <div class="modal-body">
-              <span>
-                  <form action="index.html" method="get" target="_self" >
-                      <p>Thank you for reaching out!!!</p>
-                      <p>Please enter your email and we will get back to you.</p>
-                      <input type="email" placeholder="Enter your email" name="email" required/><br />
-                      <div class="modal-footer"></div>
-                      <button type="sunmit" style="float: right;" class="btn btn-primary">Submit</button>
-              </form>
-          </span>
-          </div>
-   
-            
-          </div>
-        </div>
-      </div>   
       <script src="./scripts/common.js"></script>
+      <script src="./scripts/list.js"></script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL3usUXzn23sAe6FMhXwToaMI1dnyJb0Y&callback=initMap"></script>
     </body>
 </html>
